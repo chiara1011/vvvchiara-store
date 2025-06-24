@@ -8,69 +8,72 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       background-color: #ffffff;
       color: #000000;
-      overflow-x: hidden;
     }
     header {
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #e0e0e0;
     }
     h1 {
       margin: 0;
-      font-size: 2rem;
-      font-weight: bold;
+      font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: 2px;
     }
     .catalogo {
       display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 60px;
+      padding: 60px 20px;
+      max-width: 1200px;
       margin: 0 auto;
     }
-    @media (max-width: 600px) {
-      .catalogo {
-        grid-template-columns: 1fr;
-      }
-    }
     .prodotto {
-      border: 1px solid #000;
-      padding: 10px;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
     }
     .prodotto img {
-      width: 250px;
-      height: 250px;
+      width: 100%;
+      max-width: 320px;
+      height: 420px;
       object-fit: cover;
-      display: block;
-      margin: 0 auto 10px;
+      background-color: #f8f8f8;
     }
     .prodotto h2 {
-      font-size: 1.1rem;
-      margin: 10px 0 5px;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0;
+      text-transform: uppercase;
     }
     .prodotto p {
-      margin: 5px 0;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    button {
+      background: none;
+      border: 1px solid #000;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #000;
+      color: #fff;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      border-top: 1px solid #ccc;
-    }
-    button {
-      padding: 8px 16px;
-      background: #000;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      opacity: 0.8;
+      padding: 40px 20px;
+      font-size: 0.85rem;
+      color: #666;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
