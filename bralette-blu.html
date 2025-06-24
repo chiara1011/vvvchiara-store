@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bralette Blu - VVVCHIARA!!!stock</title>
   <style>
     body {
@@ -35,50 +35,50 @@
       margin-left: 20px;
       text-decoration: none;
       color: #000;
-      font-size: 0.9rem;
       font-weight: 400;
+      font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
     nav a:hover {
       text-decoration: underline;
     }
-    .product-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 800px;
+    main {
+      max-width: 1000px;
       margin: 60px auto;
       padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
     }
-    .product-image {
+    img {
       width: 100%;
-      max-width: 500px;
-      height: auto;
       object-fit: cover;
+      max-height: 600px;
     }
-    .product-details {
-      text-align: center;
-      margin-top: 40px;
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
     }
     h2 {
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
+      font-size: 2rem;
+      margin: 0;
     }
     p {
-      font-size: 1rem;
-      margin: 5px 0;
+      font-size: 1.1rem;
+      margin: 0;
     }
     button {
       background: none;
       border: 1px solid #000;
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 0.9rem;
       text-transform: uppercase;
       cursor: pointer;
-      margin-top: 20px;
       transition: all 0.3s ease;
+      width: fit-content;
     }
     button:hover {
       background-color: #000;
@@ -98,11 +98,4 @@
     </div>
   </header>
 
-  <main class="product-container">
-    <img class="product-image" src="https://i.postimg.cc/qg6GdSqN/temp-Imageoe-HL39.jpg" alt="Bralette Blu" />
-    <div class="product-details">
-      <h2>Bralette Blu</h2>
-      <p>&euro;35.00</p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_xclick">
-        <input type="hidden" name="business" value="chiara1011@me.com">
+  <main>
