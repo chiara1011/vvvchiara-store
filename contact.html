@@ -12,21 +12,27 @@
       color: #000000;
     }
     header {
-      padding: 40px 20px;
-      text-align: center;
       border-bottom: 1px solid #e0e0e0;
     }
-    header h1 {
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+    .topbar h1 {
+      margin: 0 auto;
       font-size: 2.5rem;
       font-weight: 500;
       letter-spacing: 2px;
-      margin: 0;
     }
     nav {
-      margin-top: 20px;
+      position: absolute;
+      right: 40px;
+      top: 35px;
     }
     nav a {
-      margin: 0 15px;
+      margin-left: 20px;
       text-decoration: none;
       color: #000;
       font-weight: 400;
@@ -43,7 +49,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 60px 20px;
+      padding: 100px 20px 60px;
     }
     p {
       font-size: 1rem;
@@ -93,12 +99,14 @@
 </head>
 <body>
   <header>
-    <h1>VVVCHIARA!!!stock</h1>
-    <nav>
-      <a href="index.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
+    <div class="topbar">
+      <h1>VVVCHIARA!!!stock</h1>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </div>
   </header>
   <main>
     <p>mail: chiara1011@me.com</p>
