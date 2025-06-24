@@ -19,7 +19,6 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      position: relative;
     }
     .topbar h1 {
       margin: 0 auto;
@@ -31,8 +30,6 @@
       position: absolute;
       right: 40px;
       top: 35px;
-      display: flex;
-      align-items: center;
     }
     nav a {
       margin-left: 20px;
@@ -42,27 +39,9 @@
       font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      position: relative;
     }
     nav a:hover {
       text-decoration: underline;
-    }
-    .cart-icon {
-      width: 20px;
-      height: 20px;
-      margin-left: 20px;
-      display: inline-block;
-      vertical-align: middle;
-    }
-    .cart-count {
-      position: absolute;
-      top: -6px;
-      right: -10px;
-      background-color: red;
-      color: white;
-      font-size: 0.7rem;
-      padding: 2px 5px;
-      border-radius: 50%;
     }
     .catalogo {
       display: grid;
@@ -100,4 +79,68 @@
       background: none;
       border: 1px solid #000;
       padding: 10px 20px;
-      font-
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .prodotto a button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.85rem;
+      color: #666;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <h1>VVVCHIARA!!!stock</h1>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="catalogo">
+    <div class="prodotto">
+      <img src="https://i.postimg.cc/qg6GdSqN/temp-Imageoe-HL39.jpg" alt="Bralette Blu">
+      <h2>Bralette Blu</h2>
+      <p>&euro;35.00</p>
+      <a href="bralette-blu.html">
+        <button>Acquista</button>
+      </a>
+    </div>
+
+    <div class="prodotto">
+      <img src="https://i.postimg.cc/qg6GdSqN/temp-Imageoe-HL39.jpg" alt="Bralette Nera">
+      <h2>Bralette Nera</h2>
+      <p>&euro;35.00</p>
+      <a href="bralette-nera.html">
+        <button>Acquista</button>
+      </a>
+    </div>
+
+    <!-- NUOVO PRODOTTO: White dress -->
+    <div class="prodotto">
+      <img src="https://i.postimg.cc/rKSwt5gV/IMG-6697.jpg" alt="White dress">
+      <h2>White dress</h2>
+      <p>&euro;100.00</p>
+      <a href="white-dress.html">
+        <button>Acquista</button>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 VVVCHIARA!!!stock. Tutti i diritti riservati.
+  </footer>
+</body>
+</html>
