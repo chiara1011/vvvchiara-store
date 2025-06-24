@@ -13,15 +13,27 @@
       color: #000000;
     }
     header {
-      padding: 40px 20px;
-      text-align: center;
+      padding: 20px;
       border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 500;
       letter-spacing: 2px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .catalogo {
       display: grid;
@@ -80,6 +92,11 @@
 <body>
   <header>
     <h1>VVVCHIARA!!!stock</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main class="catalogo">
