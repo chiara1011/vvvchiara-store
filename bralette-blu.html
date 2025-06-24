@@ -11,26 +11,31 @@
       background-color: #fff;
       color: #000;
     }
+
     header {
       border-bottom: 1px solid #e0e0e0;
     }
+
     .topbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
     }
+
     .topbar h1 {
       margin: 0 auto;
       font-size: 2.5rem;
       font-weight: 500;
       letter-spacing: 2px;
     }
+
     nav {
       position: absolute;
       right: 40px;
       top: 35px;
     }
+
     nav a {
       margin-left: 20px;
       text-decoration: none;
@@ -40,49 +45,77 @@
       text-transform: uppercase;
       letter-spacing: 1px;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    main {
-      max-width: 1000px;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
       margin: 60px auto;
       padding: 0 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      gap: 60px;
+      align-items: flex-start;
     }
-    img {
+
+    .image {
+      flex: 1 1 400px;
+    }
+
+    .image img {
       width: 100%;
+      max-width: 500px;
+      height: auto;
       object-fit: cover;
-      max-height: 600px;
+      background-color: #f8f8f8;
     }
+
     .details {
+      flex: 1 1 300px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       gap: 20px;
     }
-    h2 {
-      font-size: 2rem;
+
+    .details h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .details p {
+      font-size: 1rem;
       margin: 0;
     }
-    p {
-      font-size: 1.1rem;
-      margin: 0;
+
+    form {
+      margin-top: 20px;
     }
+
     button {
       background: none;
       border: 1px solid #000;
-      padding: 12px 24px;
+      padding: 10px 20px;
       font-size: 0.9rem;
       text-transform: uppercase;
       cursor: pointer;
       transition: all 0.3s ease;
-      width: fit-content;
     }
+
     button:hover {
       background-color: #000;
       color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.85rem;
+      color: #666;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
@@ -98,4 +131,27 @@
     </div>
   </header>
 
-  <main>
+  <main class="container">
+    <div class="image">
+      <img src="https://i.postimg.cc/qg6GdSqN/temp-Imageoe-HL39.jpg" alt="Bralette Blu">
+    </div>
+    <div class="details">
+      <h2>Bralette Blu</h2>
+      <p>Taglia unica | Materiale stretch | Colore: blu navy</p>
+      <p><strong>€35.00</strong></p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="chiara1011@me.com">
+        <input type="hidden" name="item_name" value="Bralette Blu">
+        <input type="hidden" name="amount" value="35.00">
+        <input type="hidden" name="currency_code" value="EUR">
+        <button type="submit">Acquista ora</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 VVVCHIARA!!!stock. Tutti i diritti riservati.
+  </footer>
+</body>
+</html>
