@@ -2,62 +2,38 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VVVCHIARA!!!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VVVCHIARA!!!stock - Homepage</title>
   <style>
-    * {
-      box-sizing: border-box;
+    body {
       margin: 0;
-      padding: 0;
-    }
-    body, html {
-      height: 100%;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fff;
-    }
-    .container {
+      background-color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-    .intro-image {
-      width: 100%;
-      max-width: 800px;
-      height: auto;
+      font-family: sans-serif;
       cursor: pointer;
-      transition: transform 0.3s ease;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
-    .intro-image:hover {
-      transform: scale(1.02);
+    .container {
+      text-align: center;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-      letter-spacing: 2px;
+    .logo {
+      width: 60vw;
+      max-width: 700px;
+      margin-bottom: 20px;
     }
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
+    .drawing {
+      width: 40vw;
+      max-width: 500px;
     }
   </style>
 </head>
-<body>
+<body onclick="window.location.href='index.html'">
   <div class="container">
-    <h1>VVVCHIARA!!!</h1>
-    <a href="index.html">
-      <img
-        class="intro-image"
-        src="https://i.postimg.cc/rKSwt5gV/IMG-6697.jpg"
-        alt="Entra nello shop"
-      />
-    </a>
+    <img src="/mnt/data/IMG_3850.png" alt="VVVCHIARA Logo" class="logo" />
+    <img src="/mnt/data/IMG_3844.jpeg" alt="Scatola" class="drawing" />
   </div>
 </body>
 </html>
