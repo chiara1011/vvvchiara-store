@@ -23,3 +23,115 @@
     .topbar h1 {
       margin: 0 auto;
       font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+    nav {
+      position: absolute;
+      right: 40px;
+      top: 35px;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 400;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .cart-item span {
+      font-size: 1rem;
+    }
+    .total {
+      text-align: right;
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    button {
+      display: block;
+      margin: 40px auto 0;
+      padding: 12px 30px;
+      border: 1px solid #000;
+      background: none;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <h1>VVVCHIARA!!!stock</h1>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="cart.html">CART</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Il tuo carrello</h2>
+    <div id="cart-items"></div>
+    <div class="total" id="cart-total"></div>
+    <button onclick="checkout()">Procedi all'acquisto</button>
+  </main>
+
+  <script>
+    const items = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const container = document.getElementById("cart-items");
+    const totalEl = document.getElementById("cart-total");
+    let total = 0;
+
+    if (items.length === 0) {
+      container.innerHTML = "<p>Il carrello è vuoto.</p>";
+      totalEl.innerHTML = "";
+    } else {
+      items.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "cart-item";
+        div.innerHTML = `
+          <span>${item.name}</span>
+          <span>${item.price.toFixed(2)} €</span>
+        `;
+        container.appendChild(div);
+        total += item.price;
+      });
+      totalEl.textContent = `Totale: €${total.toFixed(2)}`;
+    }
+
+    function checkout() {
+      alert("Funzione di pagamento non ancora attiva.");
+    }
+  </script>
+</body>
+</html>
