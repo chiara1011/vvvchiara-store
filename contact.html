@@ -7,32 +7,25 @@
   <style>
     body {
       margin: 0;
-      padding: 40px 20px;
       font-family: 'Helvetica Neue', sans-serif;
       background-color: #ffffff;
       color: #000000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
     }
     header {
-      width: 100%;
-      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
       border-bottom: 1px solid #e0e0e0;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 500;
       letter-spacing: 2px;
       margin: 0;
-      text-align: center;
-    }
-    nav {
-      margin-top: 10px;
     }
     nav a {
-      margin: 0 15px;
+      margin-left: 20px;
       text-decoration: none;
       color: #000;
       font-weight: bold;
@@ -41,23 +34,30 @@
       text-decoration: underline;
     }
     main {
-      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
     }
     p {
       font-size: 1rem;
       margin: 10px 0;
+      font-weight: normal;
     }
     a {
       color: #000;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: normal;
     }
     a:hover {
       text-decoration: underline;
     }
-    .icon {
-      font-size: 1.5rem;
-      margin-top: 20px;
+    .social-icon {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
   </style>
 </head>
@@ -71,8 +71,12 @@
     </nav>
   </header>
   <main>
-    <p>Email: <a href="mailto:chiara1011@me.com">chiara1011@me.com</a></p>
-    <p class="icon">📷 Instagram: <a href="https://instagram.com/vvvchiara" target="_blank">@vvvchiara</a></p>
+    <p>mail: chiara1011@me.com</p>
+    <p>
+      <a href="https://instagram.com/vvvchiara" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">@vvvchiara
+      </a>
+    </p>
   </main>
 </body>
 </html>
